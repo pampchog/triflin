@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Art Class</title> 
+  <link href="icon.png" rel="icon" />
+  <script src="https://kit.fontawesome.com/e897e5d5dc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  
+  <p>
+    Laddar innehåll, vänta ungefär 15 sekunder max.
+  </p>
+  
+  <iframe id="frame" style="position: fixed; inset: 0px; outline: none; border: none; height: 100%; width: 100%;"></iframe>
+  
+  <script src="./uv/uv.bundle.js"></script>
+  <script src="./uv/uv.config.js"></script>
+  <script src="./js/data.js"></script>
+  
+
+  <script>
+    
+    const params = new URLSearchParams(window.location.search)
+    if (params.get("gxme")) {
+      gxmes.forEach(gxme => {
+        if (gxme.id != params.get("gxme")) return
+        document.title = `${gxme.title} | Art Class`
+        if (gxme.note) document.querySelector("#note").innerHTML = gxme.note
+        if (gxme.fullscreen) document.querySelector("#footer").style.display = "none"
+        navigator.serviceWorker.register('./loadsw.js', {
+          scope: __uv$config.prefix
+        }).then(() => {
+          document.querySelector("#frame").src = __uv$config.prefix + __uv$config.encodeUrl(gxme.url);
+          document.querySelector("#loadingdiv")[0].remove()
+          
+          
+        });
+        
+      })
+    } else if (params.get("app")) {
+      apps.forEach(app => {
+        if (app.id != params.get("app")) return
+        document.title = `${app.title} | Art Class`
+        navigator.serviceWorker.register('./loadsw.js', {
+          scope: __uv$config.prefix
+          
+        }).then(() => {
+          document.querySelector("#frame").src = __uv$config.prefix + __uv$config.encodeUrl(app.url);
+          document.querySelector("#loadingdiv")[0].remove()
+          if (app.fullscreen) document.querySelector("#footer").style.display = "none" 
+        });
+      })
+    }
+    
+  </script>
+</body>
+
+</html>

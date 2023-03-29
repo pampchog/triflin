@@ -1,0 +1,60 @@
+<html>
+  
+  <head>
+    
+    <title>Ny flik</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://kit.fontawesome.com/0f4ee7107b.js" crossorigin="anonymous"></script>
+    <script src="js/cloaker.js"></script>
+    <meta name="theme-color" content="#ffffff">
+    
+  </head>
+
+  <body>
+    
+    <div class="navbar">
+      <div class="leftbar">
+        <a href="gxmxs.html"><button class="button">Spel</button></a>
+        <a href="apps.html"><button class="button">Appar</button></a>
+        <a href="search.html"><button class="button">Web</button></a>
+      </div>
+      <div class="rightbar">
+        <a href="index.html"><h1>Title</h1></a>
+      </div>
+    </div>
+
+    <div id="homepage-cards">
+
+    <script src="js/data.js"></script>
+    <script>
+      apps.forEach(app => {
+        var card = document.createElement("div")
+        var image = document.createElement("img")
+        var text = document.createElement("h4")
+        card.classList.add("card")
+        card.addEventListener("click", () => {
+          var url=`https://keen-tall-dugout.glitch.me/load.html?app=${app.id}`
+          win=window.open(); win.document.body.style.margin='0';
+          win.document.body.style.height='100vh';
+          var iframe=win.document.createElement('iframe');
+          iframe.style.border='none';
+          iframe.style.width='100%';
+          iframe.style.height='100%';
+          iframe.style.margin='0';
+          iframe.referrerpolicy='no-referrer';
+          iframe.allow='fullscreen';
+          iframe.src=url.toString();
+          win.document.body.appendChild(iframe);
+        })
+        if (app.image) image.src = app.image
+        if (!app.image) image.src = "https://via.placeholder.com/200"
+        text.innerHTML = app.title
+        card.appendChild(image)
+        card.appendChild(text)
+        document.querySelector("#homepage-cards").appendChild(card)
+      })
+      
+    </script>
+  </body>
+</html>
