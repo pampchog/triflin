@@ -1,4 +1,4 @@
-var gxmes = [
+var games = [
   {
     'id': 'nowgg',
     'title': 'now.gg',
@@ -6,27 +6,27 @@ var gxmes = [
     'image': 'https://uploads-ssl.webflow.com/60f008ba9757da0940af288e/6232d610e4172bed260d4cfd_9Dw5vXGi_400x400.jpeg'
   },
   {
-    'id': 'cookieclicker',
-    'title': 'Cookie Clicker',
-    'url': 'https://rawcdn.githack.com/3kh0/3kh0-Assets/21ac7257444af1713884b35045938d57e88a4993/cookie-clicker/index.html',
-    'image': 'https://play-lh.googleusercontent.com/OssE3ON9WsLZedOF39UCgtIHcRYfV0OqQS9O78LfmRdxSyKdHX52G2OFa0LkG6D-k9w'
+    'id': 'y8',
+    'title': 'Y8',
+    'url': 'https://y8.com/',
+    'image': 'https://play-lh.googleusercontent.com/rrFtf3hQpmMUmwHdcsvsV6vNpjMP9wsbvt6PpVg6sUleu0iJrlqVQizckc49dNkFQho'
   },
   {
-    'id': 'bitlife',
-    'title': 'Bitlife',
-    'url': 'https://rawcdn.githack.com/3kh0/3kh0-Assets/d1a97cbddcf69b15adf2ab4a491df717ecf22938/bitlife/index.html',
-    'image': 'https://d.newsweek.com/en/full/1317374/bitlife-ribbons-how-get-all-complete-list-android-ios-cheats-guide-tips-become.jpg?w=1600&h=1600&q=88&f=75befc746fb83a0c568c44ca07bc5e64'
+    'id': 'ekho',
+    'title': '3kh0',
+    'url': 'https://3kh0.github.io',
+    'image': 'https://avatars.githubusercontent.com/u/58097612?v=4'
   },
   {
-    'id': 'smashkarts',
-    'title': 'Smash Karts',
-    'url': 'https://raw.githack.com/3kh0/3kh0-assets/main/smashkarts/index.html',
-    'image': 'https://raw.githack.com/3kh0/3kh0-assets/main/smashkarts/images/icon-512.png'
+    'id': 'a10',
+    'title': 'A10',
+    'url': 'https://a10.com/',
+    'image': 'https://yt3.googleusercontent.com/ytc/AL5GRJW5900gC_FSuxy8wahaOF-hCTSSA-aBiT1uoKJHtQ=s900-c-k-c0x00ffffff-no-rj'
   },
   {
-    'id': 'circlo',
-    'title': 'circlO',
-    'url': 'https://raw.githack.com/3kh0/3kh0-assets/main/circlo/index.html',
-    'image': 'https://raw.githack.com/3kh0/3kh0-assets/main/circlo/img/download.png'
+    'id': 'poki',
+    'title': 'POKI Spel',
+    'url': 'https://poki.se/',
+    'image': 'https://a.poki.com/icons/fav-512.png'
   },
 ]
