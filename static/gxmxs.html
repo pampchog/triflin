@@ -26,5 +26,34 @@
 
     <div id="homepage-cards"></div>
 
+    <script src="js/gdata.js"></script>
+    <script>
+      games.forEach(game => {
+      var card = document.createElement("div")
+      var image = document.createElement("img")
+      var text = document.createElement("h4")
+      card.classList.add("card")
+      card.addEventListener("click", () => {
+        var url=`https://triflin.onrender.com/load.html?game=${game.id}`
+        win=window.open(); win.document.body.style.margin='0';
+        win.document.body.style.height='100vh';
+        var iframe=win.document.createElement('iframe');
+        iframe.style.border='none';
+        iframe.style.width='100%';
+        iframe.style.height='100%';
+        iframe.style.margin='0';
+        iframe.referrerpolicy='no-referrer';
+        iframe.allow='fullscreen';
+        iframe.src=url.toString();
+        win.document.body.appendChild(iframe);
+      })
+      if (game.image) image.src = game.image
+      if (!game.image) image.src = "https://www.pngkey.com/png/full/167-1670247_white-globe-icon-png-holy-bible-new-international.png"
+      text.innerHTML = game.title
+      card.appendChild(image)
+      card.appendChild(text)
+      document.querySelector("#homepage-cards").appendChild(card)
+    })
+    </script>
   </body>
 </html>
