@@ -88,5 +88,17 @@ var apps = [
     'title': 'Github',
     'url': 'https://github.com',
     'image': 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png'
+  },
+  {
+    'id': 'chatgpt',
+    'title': 'ChatGPT',
+    'url': 'https://chat.openai.com',
+    'image': 'https://thelasttrombone.files.wordpress.com/2022/12/chatgpt_logo.jpg'
+  },
+  {
+    'id': 'instagram',
+    'title': 'Instagram',
+    'url': 'https://instagram.com',
+    'image': 'https://play-lh.googleusercontent.com/VRMWkE5p3CkWhJs6nv-9ZsLAs1QOg5ob1_3qg-rckwYW7yp1fMrYZqnEFpk0IoVP4LM=w240-h480-rw'
   }
 ]
