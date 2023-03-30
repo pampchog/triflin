@@ -51,7 +51,7 @@ form.addEventListener('submit', async event => {
         else if (!(url.startsWith('https://') || url.startsWith('http://'))) url = 'http://' + url;
 
 
-        window.location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
+        redir()
     });
 });
 
@@ -59,12 +59,25 @@ function isUrl(val = ''){
     if (/^http(s?):\/\//.test(val) || val.includes('.') && val.substr(0, 1) !== ' ') return true;
     return false;
 };
+
+function faq() {
+  alert("Skriv in en länk så kommer webbsidan att öppnas, även om den i vanliga fall är blockad. Du kan även skriva in något annat så kommer det öppnas som en google sökning. Inget av detta syns på din webbhistorik.")
+}
       
-    </script>
-    <script>
-      function faq() {
-        alert("Skriv in en länk så kommer webbsidan att öppnas, även om den i vanliga fall är blockad. Du kan även skriva in något annat så kommer det öppnas som en google sökning. Inget av detta syns på din webbhistorik.")
-      }
+function redir() {
+  var url=`https://triflin.onrender.com/${__uv$config.prefix + __uv$config.encodeUrl(url)}`
+  win=window.open(); win.document.body.style.margin='0';
+  win.document.body.style.height='100vh';
+  var iframe=win.document.createElement('iframe');
+  iframe.style.border='none';
+  iframe.style.width='100%';
+  iframe.style.height='100%';
+  iframe.style.margin='0';
+  iframe.referrerpolicy='no-referrer';
+  iframe.allow='fullscreen';
+  iframe.src=url.toString();
+  win.document.body.appendChild(iframe);
+}
     </script>
     
   </body>
