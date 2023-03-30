@@ -26,24 +26,5 @@
 
     <div id="homepage-cards"></div>
 
-    <script src="js/gdata.js"></script>
-    <script>
-      gxmes.forEach(gxme => {
-        var card = document.createElement("div")
-        var image = document.createElement("img")
-        var text = document.createElement("h4")
-        card.classList.add("card")
-        card.addEventListener("click", () => {
-          window.location.href = `/load.html?gxme=${gxme.id}`
-        })
-        if (gxme.image) image.src = gxme.image
-        if (!gxme.image) image.src = "https://via.placeholder.com/200"
-        text.innerHTML = gxme.title
-        card.appendChild(image)
-        card.appendChild(text)
-        document.querySelector("#homepage-cards").appendChild(card)
-      })
-      
-    </script>
   </body>
 </html>
