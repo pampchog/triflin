@@ -2,9 +2,7 @@
 <html>
 
 <head>
-  <title>Art Class</title> 
-  <link href="icon.png" rel="icon" />
-  <script src="https://kit.fontawesome.com/e897e5d5dc.js" crossorigin="anonymous"></script>
+  <title>Loader</title> 
 </head>
 
 <body>
@@ -18,26 +16,23 @@
   <script src="./uv/uv.bundle.js"></script>
   <script src="./uv/uv.config.js"></script>
   <script src="./js/data.js"></script>
+  <script src="./js/gdata.js"></script>
   
 
   <script>
-    
     const params = new URLSearchParams(window.location.search)
-    if (params.get("gxme")) {
-      gxmes.forEach(gxme => {
-        if (gxme.id != params.get("gxme")) return
-        document.title = `${gxme.title} | Art Class`
-        if (gxme.note) document.querySelector("#note").innerHTML = gxme.note
-        if (gxme.fullscreen) document.querySelector("#footer").style.display = "none"
+    if (params.get("game")) {
+      games.forEach(game => {
+        if (game.id != params.get("game")) return
+        document.title = `${game.title} | Art Class`
+        if (game.note) document.querySelector("#note").innerHTML = game.note
+        if (game.fullscreen) document.querySelector("#footer").style.display = "none"
         navigator.serviceWorker.register('./loadsw.js', {
           scope: __uv$config.prefix
         }).then(() => {
-          document.querySelector("#frame").src = __uv$config.prefix + __uv$config.encodeUrl(gxme.url);
+          document.querySelector("#frame").src = __uv$config.prefix + __uv$config.encodeUrl(game.url);
           document.querySelector("#loadingdiv")[0].remove()
-          
-          
         });
-        
       })
     } else if (params.get("app")) {
       apps.forEach(app => {
@@ -53,7 +48,6 @@
         });
       })
     }
-    
   </script>
 </body>
 
