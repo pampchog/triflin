@@ -91,8 +91,8 @@ var apps = [
   },
   {
     'id': 'chatgpt',
-    'title': 'ChatGPT',
-    'url': 'https://chat.openai.com',
+    'title': 'Tutorly AI (chatgpt)',
+    'url': 'https://tutorly.ai',
     'image': 'https://thelasttrombone.files.wordpress.com/2022/12/chatgpt_logo.jpg'
   },
   {
