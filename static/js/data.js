@@ -100,5 +100,11 @@ var apps = [
     'title': 'Instagram',
     'url': 'https://instagram.com',
     'image': 'https://play-lh.googleusercontent.com/VRMWkE5p3CkWhJs6nv-9ZsLAs1QOg5ob1_3qg-rckwYW7yp1fMrYZqnEFpk0IoVP4LM=w240-h480-rw'
+  }, 
+  {
+    'id': 'twitter',
+    'title': 'Twitter',
+    'url': 'https://twitter.com',
+    'image': 'https://play-lh.googleusercontent.com/D8ZJ4rqEc32xRv-ubFyo9YmmJ9f0Fo5czjJUfMantl7S-bya6cxHGwi-5jChmr06p-SC'
   }
 ]
