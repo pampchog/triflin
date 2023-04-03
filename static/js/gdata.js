@@ -21,7 +21,7 @@ var games = [
     'id': 'poki',
     'title': 'POKI Spel',
     'url': 'https://poki.se/',
-    'image': 'https://a.poki.com/icons/fav-512.png'
+    'image': 'https://cdn.homerun.co/19206/logo-main-square-500w1523475476inline.png'
   },
   {
     'id': '2player',
@@ -33,7 +33,7 @@ var games = [
     'id': 'spelo',
     'title': 'Spelo.se',
     'url': 'https://www.spelo.se/',
-    'image': 'https://tcf.admeen.org/category/1000/846/400x400/ambulance.jpg'
+    'image': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvDHjPWHHjRZe_3JOuFnjyrv_RK5V4OAYwIJRutlM3JO63ntRCd2ArUK8dhVY6Zmq1CI8&usqp=CAU'
   },
   {
     'id': 'slither',
@@ -51,7 +51,7 @@ var games = [
     'id': 'linerider',
     'title': 'Line rider',
     'url': 'https://www.linerider.com/',
-    'image': 'https://tcf.admeen.org/category/500/211/400x400/line-rider.jpg'
+    'image': 'https://play-lh.googleusercontent.com/G5DWbtulfohlQU3Pwp8_pfyMzL66Ry-V1fDR3Su8ISNCoJ6--wP1DQ3DUwSgHZUiZQ'
   },
   {
     'id': 'watchdocs',
