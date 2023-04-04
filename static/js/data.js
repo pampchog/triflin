@@ -106,5 +106,11 @@ var apps = [
     'title': 'Twitter',
     'url': 'https://twitter.com',
     'image': 'https://play-lh.googleusercontent.com/D8ZJ4rqEc32xRv-ubFyo9YmmJ9f0Fo5czjJUfMantl7S-bya6cxHGwi-5jChmr06p-SC'
+  },
+  {
+    'id': 'ometv',
+    'title': 'OmeTV',
+    'url': 'https://ome.tv/'
+    'image': 'https://play-lh.googleusercontent.com/dqXfJhXmJRvQNU-6ExVKC1QchVfscm1VpmZO16IAjAF0eN6YwWIUjdOSPSdBgK1gRQ=s180-rw'
   }
 ]
