@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>24/7 Chill Radio</title>
+    <link rel="icon" type="image/png" sizes="96x96" href="images/96x96.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body>
+  <script src="js/code.js"></script>
+    <div id="app">
+	<div id="wrapper">
+		<h1 class="glitch" data-text="LOFI RADIO">LOFI RADIO</h1>
+    <center><audio id="testAudio" hidden src="https://coderadio-relay-ffm.freecodecamp.org/radio/8010/radio.mp3" type="audio/mpeg"> </audio><button class="playbutton" id="playAudio" style="padding:10px 40px!important;font-size:20px">PLAY RADIO</button><center></center></center>
+  </div>
+</div>
+    <script type="text/javascript">
+document.getElementById("playAudio").addEventListener("click", function(){
+    var audio = document.getElementById('testAudio');
+  if(this.className == 'is-playing'){
+    this.className = "playbutton";
+    this.innerHTML = "PLAY RADIO"
+    audio.pause();
+  }else{
+    this.className = "is-playing";
+    this.innerHTML = "PAUSE RADIO";
+    audio.play();
+  }
+});
+</script><script src="js/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/radio.css">
+</body></html>
