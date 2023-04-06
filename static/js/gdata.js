@@ -6,10 +6,10 @@ var games = [
     'image': 'https://play-lh.googleusercontent.com/rrFtf3hQpmMUmwHdcsvsV6vNpjMP9wsbvt6PpVg6sUleu0iJrlqVQizckc49dNkFQho'
   },
   {
-    'id': 'spelase',
-    'title': 'Spela.se',
-    'url': 'https://spela.se',
-    'image': 'https://files.cdn.spilcloud.com/drago/1614847196_drago-pointing.png'
+    'id': 'cookieclicker',
+    'title': 'Cookie Clicker',
+    'url': 'https://orteil.dashnet.org/cookieclicker/',
+    'image': 'https://play-lh.googleusercontent.com/OssE3ON9WsLZedOF39UCgtIHcRYfV0OqQS9O78LfmRdxSyKdHX52G2OFa0LkG6D-k9w'
   },
   {
     'id': 'a10',
