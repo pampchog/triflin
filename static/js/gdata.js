@@ -12,10 +12,10 @@ var games = [
     'image': 'https://play-lh.googleusercontent.com/OssE3ON9WsLZedOF39UCgtIHcRYfV0OqQS9O78LfmRdxSyKdHX52G2OFa0LkG6D-k9w'
   },
   {
-    'id': 'a10',
-    'title': 'A10',
-    'url': 'https://a10.com/',
-    'image': 'https://yt3.googleusercontent.com/ytc/AL5GRJW5900gC_FSuxy8wahaOF-hCTSSA-aBiT1uoKJHtQ=s900-c-k-c0x00ffffff-no-rj'
+    'id': 'bolibompa',
+    'title': 'Bolibompadrakens värld',
+    'url': 'https://bolibompa-cdn.dojnaz.net/svt/spel/drakens-varld',
+    'image': 'https://images.aftonbladet-cdn.se/v2/images/d1234d72-889d-4cc6-9512-d757c66219ac?fit=crop&format=auto&h=569&q=50&w=394&s=230db8444923b6902c87ba0390a2b15f2647cd3f'
   },
   {
     'id': 'poki',
@@ -30,10 +30,10 @@ var games = [
     'image': 'https://lh3.googleusercontent.com/WPMDHq8ehWqE4BNS6ORnlQ1J_uFwb7rOduNUykM7EpaTctYwnKq6YenvrpvY4iwKX-ZZ'
   },
   {
-    'id': 'spelo',
-    'title': 'Spelo.se',
-    'url': 'https://www.spelo.se/',
-    'image': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvDHjPWHHjRZe_3JOuFnjyrv_RK5V4OAYwIJRutlM3JO63ntRCd2ArUK8dhVY6Zmq1CI8&usqp=CAU'
+    'id': 'raddajulen',
+    'title': 'Rädda julen',
+    'url': 'https://bolibompa-cdn.dojnaz.net/svt/spel/radda-julen',
+    'image': 'https://static.cdn-expressen.se/images/c3/38/c33811952f954d52b6fedf0814b8da37/annan/314@60.jpg'
   },
   {
     'id': 'slither',
