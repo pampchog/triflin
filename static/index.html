@@ -5,6 +5,7 @@
     <title>Ny flik</title>
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/slide.css">
     <script src="https://kit.fontawesome.com/0f4ee7107b.js" crossorigin="anonymous"></script>
     <meta name="theme-color" content="#ffffff">
     <script src="js/cloaker.js"></script>
@@ -13,12 +14,82 @@
   
   <body>
     
-    <div id="wrapper">
-    		<h1>T I T L E</h1>
-        <a href="gxmxs.html"><button class="button">Spel</button></a>
-        <a href="apps.html"><button class="button">Appar</button></a>
-        <a href="search.html"><button class="button">Web</button></a>
+    <div class="navbar">
+      <div>
+        <a href="index.html"><i class="fa-solid fa-house"></i></a>
       </div>
+      <div>
+        <a class="button" href="play.html">Spel</a>
+        <a class="button" href="apps.html">Appar</a>
+        <a class="button" href="search.html">Web</a>
+      </div>
+    </div>
+    
+    <div id="wrapper">
+      <h1>T I T L E</h1>
+    </div>
+    
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <img src="https://cdn.glitch.global/45921845-66c2-4170-aa7a-aea303b1c2fd/chatgpt.png?v=1681309117339" style="width:100%">
+        <div class="text">Använd TutorlyAI (chatgpt) för skolarbete i appmenyn.</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="https://cdn.glitch.global/45921845-66c2-4170-aa7a-aea303b1c2fd/y8.png?v=1681310614266" style="width:100%">
+        <div class="text">Spela de bästa spelen på Y8 Games, finns i spelmenyn. </div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="https://cdn.glitch.global/45921845-66c2-4170-aa7a-aea303b1c2fd/flixhq.png?v=1681310819622" style="width:100%">
+        <div class="text">Kolla på gratis filmer och serier i FlixHQ appen. Finns i appmenyn.</div>
+      </div>
+
+    </div>
+    <br>
+    
+    <div style="text-align:center; margin-top:300px;"></div>
+    
+    <div id="about">  
+      <h1>
+        Vad är (title)?
+      </h1>
+      <p style="margin-top:20px;">
+        (Title) är en sida gjord av elever, för elever. Vi har lagt in alla våra favoritsidor som <a href="apps.html" style="color: #82fff7;">appar</a> och alla våra favorit <a href="play.html" style="color: #82fff7;">spelsidor</a>. Här kan du utan problem eller restriktioner nå de populäraste .io spelen eller spelsidorna, till exempel slither.io eller agar.io. Vi har även YouTube, TikTok och GeForce NOW. <br><br>Denna sida fokuserar på diskretion och säkerhet, därför låter vi inte denna sida synas i webbläsarens historik. Av samma anledning behöver du inte installera eller ändra något med din enhet för att nå sidan. Vi sparar inte din IP-adress eller cookies, din information och indentitet är fullkomligt säker hos oss.<br>
+      </p>
+      <p>
+        <br>Vi har en <a href="search.html" style="color: #82fff7;">proxy</a> där du kan skriva in en länk eller söka på något utan restriktioner. Vi använder Ultraviolet Proxy från TitaniumNetwork, av den simpla anledningen att den är bäst. Om du känner för att göra en egen sida, kolla in deras grejer. Finns mycket bra. <br>
+      </p>
+      <p>
+        <br>Har du några förslag eller frågor? Skicka in dem <a href="https://forms.gle/4UP3KYUqQnH2e2rZ8" style="color: #82fff7;">här.</a> Vi kommer kolla svaren regelbundet och åtgärda inom kort. <br>
+      </p>
+      <p>
+        <br>Vill du jobba med oss eller vill du göra en egen sida som denna? Du vet var du når oss, vi hjälper gärna till. Kontakta oss hur du än finner lämpligt. 
+      </p>
+    </div>
+    
+    <div style="text-align:center; margin-top:200px;"></div>
+    
+    <script>
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 3000); // Change image every 2 seconds
+      }
+    </script>
     
   </body>
+  
 </html>
