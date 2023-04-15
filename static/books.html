@@ -1,0 +1,41 @@
+<html>
+  
+  <head>
+    
+    <title>Ny flik</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://kit.fontawesome.com/0f4ee7107b.js" crossorigin="anonymous"></script>
+    <script src="js/cloaker.js"></script>
+    <meta name="theme-color" content="#ffffff">
+    
+  </head>
+
+  <body>
+    
+    <div class="navbar">
+      <div>
+        <a href="index.html"><i class="fa-solid fa-house"></i></a>
+      </div>
+      <div>
+        <a class="button" href="play.html">Spel</a>
+        <a class="button" href="apps.html">Appar</a>
+        <a class="button" href="search.html">Web</a>
+        <a class="button" href="search.html">Bookmarklets</a>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <p style="font-size: 15px;margin-top:10px;">Bookmarklets är bokmärken, som kör kod istället för att öppna sidor. Dra de blå länkarna till bokmärkesfältet för att spara en bookmarklet.</p>
+    </div>
+    
+    <div class="about">
+      <p><a style="color: #00cefc;text-decoration: none;" href="javascript:document.cookie='';function hjK(S4p){D3p=/; /g;return S4p.replace(D3p, '<br><br>');}if(document.cookie.length<1){alert('Inga cookies från denna sida')}else{with((na=open('','','')).document){write(hjK('Cookies från '+document.title.link(window.location.href)+', dd. '+new Date()+'<hr>'+document.cookie));close()}}//4umi.com">Visa sidans cookies</a> - Denna bookmarklet visar alla dina cookies som sidan har sparat.</p>
+      <br><p><a style="color: #00cefc;text-decoration: none;" href="javascript:(function()%7Bvar num%3Dprompt('How Times Do You Want This Page To Show Up In your History%3F')%3Bdone%3Dfalse%3Bx%3Dwindow.location.href%3Bfor (var i%3D1%3B i<%3Dnum%3B i%2B%2B)%7Bhistory.pushState(0%2C 0%2C i%3D%3Dnum%3Fx%3Ai.toString())%3Bif(i%3D%3Dnum)%7Bdone%3Dtrue%7D%7Dif(done%3D%3D%3Dtrue)%7Balert('History Flooding Successful!%5Cn '%2Bwindow.location.href%2B' %5CnNow Appears In Your History '%2Bnum%2B(num%3D%3D1%3F' time.'%3A' Times. %5CnMade By%3A Utopia'))%7D%7D)()%3B">History flooder</a> - Gjord av Utopia. Denna sida fyller din historik med vilken sida du än befinner dig på, till exempel gmail.com eller google.com.</p>
+      <br><p><a style="color: #00cefc;text-decoration: none;" href="javascript: var versionCalc = prompt('1). Basic Calculator\n2). Equations');switch (versionCalc) {  case '1':    var operatorType = parseInt(prompt('1). Addition\n2). Subtraction\n3). Multiplication\n4). Division'));    switch (operatorType) {      case 1:        var num1 = parseInt(prompt('First Number:'));        var num2 = parseInt(prompt('Second Number:'));        result = num1 + num2;        break;       case 2:        var num1 = parseInt(prompt('First Number:'));        var num2 = parseInt(prompt('Second Number:'));        result = num1 - num2;        break;       case 3:        var num1 = parseInt(prompt('First Number:'));        var num2 = parseInt(prompt('Second Number:'));        result = num1 * num2;        break;       case 4:        var num1 = parseInt(prompt('First Number:'));        var num2 = parseInt(prompt('Second Number:'));        result = num1 / num2;        break;       default:        alert('That is not a valid input. Input the number of the operation you are trying to run');        break;    };  break;  case '2':    var equationType = parseInt(prompt('1). Slope\n2). Area of a circle\n3). Area of a square/rectangle\n4). Area of a triangle\n5). Volume of a cube\n6). Distance\n7). Time\n8). Speed'));    switch (equationType) {      case 1:        m = parseInt(prompt(%22What is the rise/run? (M)%22));        x = parseInt(prompt(%22What is the distance of the line from the x-axis? (X)%22));        b = parseInt(prompt(%22What is the Y-Intercept? (B%22));        result = (m * x) + b;        break;      case 2:        r = parseInt(prompt(%27What is the radius of the circle? (R)%27));        r2 = r * r;        result = r2 * 3.14;        break;      case 3:        l = parseInt(prompt(%27What is the length?%27));        w = parseInt(prompt(%27What is the width?%27));        result = l * w;        break;      case 4:        b = parseInt(prompt(%22What is the base of the triangle?%22));        h = parseInt(prompt(%22what is the height of the triangle?%22));        result = (b * h) / 2;        break;      case 5:        l = parseInt(prompt(%27What is the length?%27));        w = parseInt(prompt(%27What is the width?%27));        h = parseInt(prompt(%27What is the height?%27));        result = l * w * h;        break;       case 6:        s = parseInt(prompt(%27What is the speed?%27));        t = parseInt(prompt(%27What is the time?%27));        result = s * t;        break;      case 7:        s = parseInt(prompt(%27What is the speed?%27));        d = parseInt(prompt(%27What is the distance?%27));        result = d / s;        break;      case 8:        s = parseInt(prompt(%27What is the time?%27));        d = parseInt(prompt(%27What is the distance?%27));        result = d / t;        break;            default:        alert(%27That is not a valid input. Input the number of the operation you are trying to run%27);        break;    };  break;  default:    alert(%27That is not a valid input. Input the number of the operation you are trying to run%27);  };alert(%27Your answer is %27 + result);">Calculator</a> - Gjord av Legend7269. En miniräknare helt enkelt.</p>
+      <br><p><a style="color: #00cefc;text-decoration: none;" href="javascript:(function () {document.title=prompt('Tab Cloak\n\nSkriv in ny titel:');var icon=document.querySelector('link[rel=%22icon%22]');switch(prompt('Välj ny titel ikon:\n\n[1] Google Sök\n[2] Google Drive\n[3] Egen länk')){case'1':icon.setAttribute('href','https://www.google.com/favicon.ico');break;case'2':icon.setAttribute('href','https://ssl.gstatic.com/images/branding/product/2x/hh_drive_96dp.png');break;case'3':icon.setAttribute('href',prompt('Skriv in länk:'))}})()">Tab cloaker</a> - Gjord av okänd, förbättrad av vi som gjort denna sida. Byter ut Texten och ikonen på din flik.</p>
+      <br><p><a style="color: #00cefc;text-decoration: none;" href="javascript:(function () { var script = document.createElement('script'); script.src=%22//cdn.jsdelivr.net/npm/eruda%22; document.body.appendChild(script); script.onload = function () { eruda.init() } })();">Inspect Element</a> - Om din skola har blockerat Inspect element, Ctrl + Shift + I, så är detta lösningen. Gjord av liriliri.</p>
+    </div>
+
+  </body>
+</html>
