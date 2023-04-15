@@ -22,10 +22,11 @@
         <a class="button" href="play.html">Spel</a>
         <a class="button" href="apps.html">Appar</a>
         <a class="button" href="search.html">Web</a>
+        <a class="button" href="search.html">Bookmarklets</a>
       </div>
     </div>
     
-    <div id="wrapper">
+    <div class="wrapper">
       <h1>T I T L E</h1>
     </div>
     
@@ -35,7 +36,7 @@
       <!-- Full-width images with number and caption text -->
       <div class="mySlides fade">
         <img src="https://cdn.glitch.global/45921845-66c2-4170-aa7a-aea303b1c2fd/chatgpt.png?v=1681309117339" style="width:100%">
-        <div class="text">Använd TutorlyAI (chatgpt) för skolarbete i appmenyn.</div>
+        <div class="text">Använd ChatGPT i appmenyn.</div>
       </div>
 
       <div class="mySlides fade">
@@ -48,12 +49,15 @@
         <div class="text">Kolla på gratis filmer och serier i FlixHQ appen. Finns i appmenyn.</div>
       </div>
 
+    <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
     <br>
     
-    <div style="text-align:center; margin-top:300px;"></div>
+    <div style="text-align:center; margin-bottom:200px;"></div>
     
-    <div id="about">  
+    <div class="about">  
       <h1>
         Vad är (title)?
       </h1>
@@ -64,29 +68,37 @@
         <br>Vi har en <a href="search.html" style="color: #82fff7;">proxy</a> där du kan skriva in en länk eller söka på något utan restriktioner. Vi använder Ultraviolet Proxy från TitaniumNetwork, av den simpla anledningen att den är bäst. Om du känner för att göra en egen sida, kolla in deras grejer. Finns mycket bra. <br>
       </p>
       <p>
-        <br>Har du några förslag eller frågor? Skicka in dem <a href="https://forms.gle/4UP3KYUqQnH2e2rZ8" style="color: #82fff7;">här.</a> Vi kommer kolla svaren regelbundet och åtgärda inom kort. <br>
+        <br>Har du några förslag eller frågor? Skicka in dem <a href="https://forms.gle/o9CQpibkgzwiMru88" style="color: #82fff7;">här.</a> Vi kommer kolla svaren regelbundet och åtgärda inom kort. <br>
       </p>
       <p>
-        <br>Vill du jobba med oss eller vill du göra en egen sida som denna? Du vet var du når oss, vi hjälper gärna till. Kontakta oss hur du än finner lämpligt. 
+        <br>Vill du jobba med oss eller vill du göra en egen sida som denna? Fråga människan du fick denna sida av. Hen hjälper gärna till.
       </p>
     </div>
     
-    <div style="text-align:center; margin-top:200px;"></div>
+    <div style="text-align:center; margin-top:50px;"></div>
     
     <script>
-      let slideIndex = 0;
-      showSlides();
+      let slideIndex = 1;
+      showSlides(slideIndex);
 
-      function showSlides() {
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
         let i;
         let slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
         for (i = 0; i < slides.length; i++) {
           slides[i].style.display = "none";
         }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}
         slides[slideIndex-1].style.display = "block";
-        setTimeout(showSlides, 3000); // Change image every 2 seconds
+        dots[slideIndex-1].className += " active";
       }
     </script>
     
