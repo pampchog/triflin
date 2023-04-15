@@ -21,6 +21,7 @@
         <a class="button" href="play.html">Spel</a>
         <a class="button" href="apps.html">Appar</a>
         <a class="button" href="search.html">Web</a>
+        <a class="button" href="search.html">Bookmarklets</a>
       </div>
     </div>
 
@@ -34,7 +35,7 @@
         var text = document.createElement("h4")
         card.classList.add("card")
         card.addEventListener("click", () => {
-          var url=`https://finnff.onrender.com/load.html?app=${app.id}`
+          var url=`https://fortune-peppermint-language.glitch.me/load.html?app=${app.id}`
           win=window.open(); win.document.body.style.margin='0';
           win.document.body.style.height='100vh';
           var iframe=win.document.createElement('iframe');
