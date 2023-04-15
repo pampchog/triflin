@@ -22,6 +22,7 @@
         <a class="button" href="play.html">Spel</a>
         <a class="button" href="apps.html">Appar</a>
         <a class="button" href="search.html">Web</a>
+        <a class="button" href="search.html">Bookmarklets</a>
       </div>
     </div>
     
@@ -41,32 +42,31 @@
     <script src="./uv/uv.bundle.js"></script>
     <script src="./uv/uv.config.js"></script>
     <script>
-      
-const form = document.querySelector('form');
-const input = document.querySelector('input');
+      const form = document.querySelector('form');
+      const input = document.querySelector('input');
 
-form.addEventListener('submit', async event => {
-    event.preventDefault();
-    window.navigator.serviceWorker.register('./loadsw.js', {
-        scope: __uv$config.prefix
-    }).then(() => {
-        let url = input.value.trim();
-        if (!isUrl(url)) url = 'https://www.google.com/search?q=' + url;
-        else if (!(url.startsWith('https://') || url.startsWith('http://'))) url = 'http://' + url;
+      form.addEventListener('submit', async event => {
+          event.preventDefault();
+          window.navigator.serviceWorker.register('./loadsw.js', {
+              scope: __uv$config.prefix
+          }).then(() => {
+              let url = input.value.trim();
+              if (!isUrl(url)) url = 'https://www.google.com/search?q=' + url;
+              else if (!(url.startsWith('https://') || url.startsWith('http://'))) url = 'http://' + url;
 
 
-        window.location.href = __uv$config.prefix + __uv$config.encodeUrl(url)
-    });
-});
+              window.location.href = __uv$config.prefix + __uv$config.encodeUrl(url)
+          });
+      });
 
-function isUrl(val = ''){
-    if (/^http(s?):\/\//.test(val) || val.includes('.') && val.substr(0, 1) !== ' ') return true;
-    return false;
-};
+      function isUrl(val = ''){
+          if (/^http(s?):\/\//.test(val) || val.includes('.') && val.substr(0, 1) !== ' ') return true;
+          return false;
+      };
 
-function faq() {
-  alert("Skriv in en länk så kommer webbsidan att öppnas, även om den i vanliga fall är blockad. Du kan även skriva in något annat så kommer det öppnas som en google sökning. Inget av detta syns på din webbhistorik.")
-}
+      function faq() {
+        alert("Skriv in en länk så kommer webbsidan att öppnas, även om den i vanliga fall är blockad. Du kan även skriva in något annat så kommer det öppnas som en google sökning. Inget av detta syns på din webbhistorik.")
+      }
     </script>
     
   </body>
