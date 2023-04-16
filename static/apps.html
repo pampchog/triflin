@@ -35,7 +35,7 @@
         var text = document.createElement("h4")
         card.classList.add("card")
         card.addEventListener("click", () => {
-          var url=`https://fortune-peppermint-language.glitch.me/load.html?app=${app.id}`
+          var url=`${window.location.origin}/load.html?app=${app.id}`
           win=window.open(); win.document.body.style.margin='0';
           win.document.body.style.height='100vh';
           var iframe=win.document.createElement('iframe');
