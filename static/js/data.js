@@ -106,7 +106,19 @@ var apps = [
     'title': 'Twitter',
     'url': 'https://twitter.com',
     'image': 'https://play-lh.googleusercontent.com/D8ZJ4rqEc32xRv-ubFyo9YmmJ9f0Fo5czjJUfMantl7S-bya6cxHGwi-5jChmr06p-SC'
-  }
+  },
+  {
+    'id': 'svtplay',
+    'title': 'SVT Play',
+    'url': 'https://www.svtplay.se/',
+    'image': 'https://yt3.googleusercontent.com/e0r1VppIsDklPpTguDesH4QGKQyRV-6E1VMqMUbGmSL1mVLj3Epc4R8nuxCczgMp7PL4G9Vuz1Q=s900-c-k-c0x00ffffff-no-rj'
+  },
+  {
+    'id': 'quora',
+    'title': 'Quora',
+    'url': 'https://quora.com',
+    'image': 'https://downloadr2.apkmirror.com/wp-content/uploads/2021/09/00/615685d3c792a.png'
+  },
 ]
 
 
@@ -142,10 +154,16 @@ var games = [
     'image': 'https://lh3.googleusercontent.com/WPMDHq8ehWqE4BNS6ORnlQ1J_uFwb7rOduNUykM7EpaTctYwnKq6YenvrpvY4iwKX-ZZ'
   },
   {
-    'id': 'raddajulen',
-    'title': 'Rädda julen',
-    'url': 'https://bolibompa-cdn.dojnaz.net/svt/spel/radda-julen',
-    'image': 'https://static.cdn-expressen.se/images/c3/38/c33811952f954d52b6fedf0814b8da37/annan/314@60.jpg'
+    'id': 'bloxd',
+    'title': 'Bloxd.io (Minecraft kopia)',
+    'url': 'https://bloxd.io/',
+    'image': 'https://i1.silvergames.com/j/b/bloxdhop-io.jpg'
+  },
+  {
+    'id': 'minecraft18',
+    'title': 'Minecraft 1.5',
+    'url': 'https://raw.githack.com/3kh0/3kh0-assets/main/precision-client/index.html',
+    'image': 'https://image.api.playstation.com/vulcan/img/cfn/11307uYG0CXzRuA9aryByTHYrQLFz-HVQ3VVl7aAysxK15HMpqjkAIcC_R5vdfZt52hAXQNHoYhSuoSq_46_MT_tDBcLu49I.png'
   },
   {
     'id': 'slither',
@@ -158,6 +176,12 @@ var games = [
     'title': 'Hole.io',
     'url': 'https://www.hole-io.com/',
     'image': 'https://play-lh.googleusercontent.com/YZcHF8esK3O-imazgjP62ZXTWeiW02HpndD4WchscpMIrCe-X8vtDb9o8ut3d7it2CM'
+  },
+  {
+    'id': 'agario',
+    'title': 'Agar.io',
+    'url': 'https://www.agar.io/',
+    'image': 'https://downloadr2.apkmirror.com/wp-content/uploads/2021/01/75/60089bd057e11.png'
   },
   {
     'id': 'linerider',
