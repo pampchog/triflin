@@ -22,7 +22,7 @@
         <a class="button" href="play.html">Spel</a>
         <a class="button" href="apps.html">Appar</a>
         <a class="button" href="search.html">Web</a>
-        <a class="button" href="search.html">Bookmarklets</a>
+        <a class="button" href="books.html">Bookmarklets</a>
       </div>
     </div>
     
@@ -54,19 +54,7 @@
               if (!isUrl(url)) url = 'https://www.google.com/search?q=' + url;
               else if (!(url.startsWith('https://') || url.startsWith('http://'))) url = 'http://' + url;
 
-
-              var iframesrc= window.location.origin + __uv$config.prefix + __uv$config.encodeUrl(url)
-              win=window.open(); win.document.body.style.margin='0';
-              win.document.body.style.height='100vh';
-              var iframe=win.document.createElement('iframe');
-              iframe.style.border='none';
-              iframe.style.width='100%';
-              iframe.style.height='100%';
-              iframe.style.margin='0';
-              iframe.referrerpolicy='no-referrer';
-              iframe.allow='fullscreen';
-              iframe.src=iframesrc.toString();
-              win.document.body.appendChild(iframe);
+              window.location.href = __uv$config.prefix + __uv$config.encodeUrl(url)
           });
       });
 
