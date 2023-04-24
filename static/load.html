@@ -42,7 +42,7 @@
           scope: __uv$config.prefix
           
         }).then(() => {
-          document.querySelector("#frame").src = __uv$config.prefix + __uv$config.encodeUrl(app.url);
+          document.querySelector("#frame").src = "/service/" + __uv$config.encodeUrl(app.url);
           document.querySelector("#loadingdiv")[0].remove()
           if (app.fullscreen) document.querySelector("#footer").style.display = "none" 
         });
